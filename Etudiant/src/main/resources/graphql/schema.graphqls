@@ -1,0 +1,21 @@
+type Query{
+	listerEtudiants : [EtudiantClass]
+	etudiantById(id : String) : EtudiantClass
+}
+
+type Mutation{
+	addEtudiant(etudiant : addetud) : EtudiantClass 
+}
+
+type EtudiantClass{
+	Appoge : ID,
+	Nome : String,
+	Prenome : String,
+	Master : String,
+}	
+
+input addetud{
+	Nome : String,
+	Prenome : String,
+	Master : String,
+}
